@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자9</title>
+    <style>
+    /* 형태 구조 선택자 */    
+    a { color:#000; text-decoration:none; }    
+    li:first-of-type a { color:red; }    
+    li:last-of-type a { color:green; }
+    li:nth-of-type(2) a { color:skyblue; }
+    li:only-of-type a { color:hotpink; }  
+    .page { height: 900px; background:red; margin-top:20px; }   
+    .page:target { background:orange; } 
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">김기태</a></li>
+        <li><a href="">멋쟁이</a></li>
+        <li><a href="">완전잘생김</a></li>
+        <li><a href="">천재</a></li>
+        <li><a href="">착한사람</a></li>
+        <li><a href="">백심이</a></li>
+        <li><a href="">철사줄</a></li>
+        <li><a href="">단단이</a></li>
+    </ul>
+    <a href="#page2">두 번째 페이지로</a>
+    <a href="#page3">세 번째 페이지로</a>
+    <ul>
+        <li><a href="#">김기태</a></li>
+        <li><a href="#">못생김</a></li>
+        <li><a href="#">왕짜증</a></li>
+        <li><a href="#">동네바보</a></li>
+    </ul>
+    <ul>
+        <li><a href="">김기태</a></li>
+    </ul>
+    <div class="page" id="page2">2페이지</div>
+    <div class="page" id="page3">3페이지</div>
+</body>
+</html>

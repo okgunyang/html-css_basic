@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 속성1</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <style>
+/*    폰트관련 속성    */
+    @import "font1.css";    
+    .font1 { font-family: 'Noto Sans KR', sans-serif;} 
+    .font2 { font-family: "NanumGothic", "나눔고딕", sans-serif; }   
+    .font3 { font-family:"ecom", cursive; } 
+    /* 웹브라우저에서 기본적으로 제공하는 대체 폰트 : serif, sans-serif, monospace, cursive, fantasy  */    
+    body, html { font-size:14px; }    
+    .em1 { font-size:3.5em; }
+    .pt1 { font-size:20pt; }
+    .px1 { font-size:20px; }
+    .per1 { font-size:350%; }   
+    .rem1 { font-size:3.5rem; }
+    .vw1 { font-size:3.5vw; }
+    .vh1 { font-size:3.5vh; }   
+    .wt1 { font-weight:normal; }    
+    .wt2 { font-weight: 100; }    
+    .wt3 { font-weight:bold; }    
+    .style1 { font-style:italic; }    
+    .style2 { font-style:normal; } 
+    .variant1 { font-variant:small-caps; }
+    .variant2 { font-variant: normal; }
+    .ht1 { line-height: 40px; }
+    .ht2 { line-height: 3; } 
+    /* font:[font-weight, font-style, font-variant]->[font-size/lineheight]->[font-family]  */    
+    .fnt1 { font:bold italic normal 24pt/1.6 "돋움", "Dotum", sans-serif; }
+    .fnt2 { font:bold 24px/1.4 "NanumGothic", "나눔고딕", sans-serif; }    
+    </style>
+</head>
+<body>
+    김기태
+    <p class="font1">김기태</p>
+    <p class="font2">김기태</p>
+    <p class="font3">abcdefg</p>
+    <p class="em1">em단위 김기태</p>
+    <p class="pt1">pt단위 김기태</p>
+    <p class="px1">px단위 김기태</p>
+    <p class="per1">percent단위 김기태</p>
+    <p class="rem1">rem단위 김기태</p>
+    <p class="vw1">vw단위 김기태</p>
+    <p class="vh1">vh단위 김기태</p>
+    <p class="wt1">일반 글자</p>
+    <p class="wt2">가는 글자</p>
+    <p class="wt3">굵은 글자</p>
+    <p class="style1">기울임꼴 문자</p>
+    <p class="style2">기본 문자</p>
+    <p class="variant1">KimKiTae</p>
+    <p class="variant2">KimKiTae</p>
+    <p class="ht1">행높이 40px 김기태</p>
+    <p class="ht2">행높이 3배 김기태</p>
+    <p class="fnt1">폰트 통합 속성1</p>
+    <p class="fnt2">폰트 통합 속성2</p>
+    <div class="fnt3">
+        <img src="fnt3.png" alt="폰트이미지">
+    </div>
+</body>
+</html>

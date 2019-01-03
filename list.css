@@ -1,0 +1,6 @@
+/* 내부 스타일 지정 */
+* { font-family:"돋움", sans-serif; }
+ul {	list-style:none; color:yellow !important; }
+#list {	color:blue; }
+.list {	color:red; }
+ul { color:orange; }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 속성3</title>
+    <style>
+    * { margin: 0; padding: 0; }    
+    body, html { width: 100%; height: 100%; }    
+    h1 { color:#fff; line-height: 4; text-align: center; 
+        text-shadow:2px 2px 15px #000; }
+    .page { width: 100%; height: 100%; }   
+    .back1 { background-color:#444; }   
+/*    background:url(이미지경로및파일명) 위치 / 크기 반복 화면과의고정, 색상      */
+    .back2 { background:url("ex1.png") bottom / 50% no-repeat fixed, #09c; }
+    .back3 { background-image:url("ex2.png"), url("img1.jpg"); 
+        background-repeat: no-repeat, repeat;
+        background-position:center center; 
+        background-size:50%, cover;         }    
+    .back4 { background-image:url("ex2.png"); 
+        background-size:50% 90%; background-attachment:fixed; }
+    .back5 { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+background: #a90329; /* Old browsers */
+background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */}  
+.back6 { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,0099cc+55,28343b+100 */
+background: #b5bdc8; /* Old browsers */
+background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #0099cc 55%, #28343b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #b5bdc8 0%,#828c95 36%,#0099cc 55%,#28343b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #b5bdc8 0%,#828c95 36%,#0099cc 55%,#28343b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */}   
+.back7 { background:linear-gradient(to top, #0099cc 0%, #9900cc 100%)}        
+    </style>
+</head>
+<body>
+    <article class="page back1">
+        <h1>배경 색상 속성 : background-color</h1>
+    </article>
+    <article class="page back2">
+        <h1>배경 통합 속성 : background</h1>
+    </article>
+    <article class="page back3">
+        <h1>배경 이미지 속성 : background-image</h1>
+        <h1>배경 반복 속성 : background-repeat</h1>
+        <h1>배경 위치 속성 : background-position</h1>
+    </article>
+    <article class="page back4">
+        <h1>배경 크기 속성 : background-size</h1>
+        <h1>배경 스크롤 속성 : background-attachment</h1>
+    </article>
+    <article class="page back5">
+        <h1>배경 속성1</h1>
+    </article>
+    <article class="page back6">
+        <h1>배경 속성2</h1>
+    </article>
+    <article class="page back7">
+        <h1>배경 속성3</h1>
+    </article>
+</body>
+</html>

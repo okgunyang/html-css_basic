@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자3</title>
+    <style>
+    input { color:navy; }
+    input[type] { border:4px solid orange; } /* type속성이 있는 경우 */
+    input[type=text] { background:red; }  /* type속성이 text인 경우 */
+    input[type$=t] { border-style:dashed; } 
+    input[type^=s] { border-color:aqua; }
+    input[type*=e] { border-width:2px; }    
+    </style>
+</head>
+<body>
+    <input >
+    <input type="text">
+    <input type="password">
+    <input type="submit">
+    <input type="reset">
+</body>
+</html>
